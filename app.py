@@ -35,10 +35,10 @@ def embeddings_store():
     embeddings = OpenAIEmbeddings()
     print(embeddings)
     texts = doc_preprocessing()
-    db = DeepLake.from_documents(texts, embeddings, dataset_path=f"hub://aianytime07/text_embedding")
+    db = DeepLake.from_documents(texts, embeddings, dataset_path=f"hub://pk1wastaken/text_embedding")
     print(db)
     db = DeepLake(
-    dataset_path=f"hub://aianytime07/text_embedding",
+    dataset_path=f"hub://pk1wastaken/text_embedding",
     read_only=True,
     embedding_function=embeddings,
     )
