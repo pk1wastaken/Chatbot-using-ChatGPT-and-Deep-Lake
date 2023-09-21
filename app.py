@@ -11,9 +11,9 @@ from streamlit_chat import message
 
 load_dotenv()
 
-os.environ['OPENAI_API_KEY'] = os.getenv('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')
-os.environ['ACTIVELOOP_TOKEN'] = os.getenv('eyJhbGciOiJIUzUxMiIsImlhdCI6MTY5NTI3Mzc3OCwiZXhwIjoxNzI2ODk2MTY1fQ.eyJpZCI6InBrMXdhc3Rha2VuIn0.tx4CrMP45lNdfKEK9um5EsCS475H0drvs9LTxyJeWbqDG0HZRm5ogZ8QkzlCXnDBDlTqLqqmf8HAbOaBQmabFA')
-os.environ['DEEPLAKE_ACCOUNT_NAME']= os.getenv('pk1wastaken')
+os.environ['OPENAI_API_KEY'] = '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'
+os.environ['ACTIVELOOP_TOKEN'] = 'eyJhbGciOiJIUzUxMiIsImlhdCI6MTY5NTI3Mzc3OCwiZXhwIjoxNzI2ODk2MTY1fQ.eyJpZCI6InBrMXdhc3Rha2VuIn0.tx4CrMP45lNdfKEK9um5EsCS475H0drvs9LTxyJeWbqDG0HZRm5ogZ8QkzlCXnDBDlTqLqqmf8HAbOaBQmabFA'
+os.environ['DEEPLAKE_ACCOUNT_NAME']= 'pk1wastaken'
 
 @st.cache_data
 def doc_preprocessing():
